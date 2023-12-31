@@ -1,10 +1,11 @@
 "use client";
 
-import { Text } from "zionix-ui";
+import { Hr, Text } from "zionix-ui";
 import pkg from "../../package.json";
 import { Typography } from "@/containers/Typography";
 import { Buttons } from "@/containers/Buttons";
 import { Form } from "@/containers/Form";
+import { Tabs } from "@/containers/Tabs";
 
 export default function Home() {
   return (
@@ -43,15 +44,21 @@ export default function Home() {
           </Text>
         </div>
 
-        {/* Typography */}
-        <Typography />
+        <div className="mt-8">
+          <Hr />
+          {/* Typography */}
+          <Typography />
 
-        {/* Buttons */}
-        <Buttons />
+          {/* Buttons */}
+          <Buttons />
 
-        {/* Form */}
-        <Form />
-      </div>      
+          {/* Tabs */}
+          <Tabs />
+
+          {/* Form */}
+          <Form />
+        </div>
+      </div>
     </div>
   );
 }
