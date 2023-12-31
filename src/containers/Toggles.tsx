@@ -26,7 +26,7 @@ export const Toggles = () => {
           <div className="flex gap-4">
             <Toggle name="myoption" label="Dark mode?" checked />
             <Toggle name="myoption3" label="Is Super?" />
-            <Toggle name="myoption2" accent  />
+            <Toggle name="myoption2" accent checked  />
             <Toggle name="myoption4" secondary checked />
           </div>
         </Tab.Content>
@@ -34,25 +34,12 @@ export const Toggles = () => {
         <Tab.Content idItem="code">
           <Highlight className="jsx">
             {`
-              <div>
-              <Text>Text 1</Text>
-              <Text large>Text 1</Text>
-              <Text extra>Text 1</Text>
-              <Text extraLarge>Text 1</Text>
-              <Text superLarge>Text 1</Text>
-              <Text thin superLarge>Text 1</Text>
-              <Text subtitle>Description text</Text>
-              <Text accent>Accent color</Text>
-
-              <Text semiBold>Text 1</Text>
-              <Text semiBold large>Text 1</Text>
-              <Text semiBold extra>Text 1</Text>
-              <Text semiBold extraLarge>Text 1</Text>
-              <Text semiBold superLarge>Text 1</Text>
-              <Text bold superLarge>Text 1</Text>
-              <Text semiBold subtitle>Description text</Text>
-              <Text semiBold accent>Accent color</Text>
-              </div>
+            <div>
+              <Toggle name="myoption" label="Dark mode?" checked />
+              <Toggle name="myoption3" label="Is Super?" />
+              <Toggle name="myoption2" accent checked  />
+              <Toggle name="myoption4" secondary checked />              
+            </div>
               `}
           </Highlight>
         </Tab.Content>
