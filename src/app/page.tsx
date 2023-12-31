@@ -39,8 +39,10 @@ export default function Home() {
             </div>
           </div>
           <Text subtitle>
-            Interface library documentation version 
-            {pkg.dependencies["zionix-ui"].substring(1, 10)}
+            Interface library documentation
+            <span className="text-sm text-gray-600 dark:text-slate-300 p-2 border dark:border-slate-500 border-slate-600 rounded-lg">
+              beta version {pkg.dependencies["zionix-ui"].substring(1, 10)}
+            </span>
           </Text>
         </div>
 
