@@ -1,4 +1,4 @@
-import { Button, Input, Text, Tab, Hr } from "zionix-ui";
+import { Text, Tab, Hr } from "zionix-ui";
 import * as Icon from "@/components/Icon";
 import Highlight from "react-highlight";
 import { IconCrop32, IconHome, IconSettings } from "@tabler/icons-react";

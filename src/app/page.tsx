@@ -6,6 +6,7 @@ import { Typography } from "@/containers/Typography";
 import { Buttons } from "@/containers/Buttons";
 import { Form } from "@/containers/Form";
 import { Tabs } from "@/containers/Tabs";
+import { Toggles } from "@/containers/Toggles";
 
 export default function Home() {
   return (
@@ -53,6 +54,9 @@ export default function Home() {
 
           {/* Buttons */}
           <Buttons />
+
+          {/* Toggle */}
+          <Toggles />
 
           {/* Tabs */}
           <Tabs />
