@@ -23,11 +23,11 @@ export const Toggles = () => {
         </Tab.Tabs>
 
         <Tab.Content idItem="design">
-          <div className="flex gap-4">
-            <Toggle name="myoption" label="Dark mode?" checked />
-            <Toggle name="myoption3" label="Is Super?" />
-            <Toggle name="myoption2" accent checked  />
-            <Toggle name="myoption4" secondary checked />
+          <div className="flex gap-4 flex-wrap">
+            <Toggle name="myoption" label="is primary?" checked />
+            <Toggle name="myoption3" />
+            <Toggle name="myoption2" accent checked label="is accent?" />
+            <Toggle name="myoption4" secondary checked label="is secondary?" />
           </div>
         </Tab.Content>
 
@@ -35,10 +35,10 @@ export const Toggles = () => {
           <Highlight className="jsx">
             {`
             <div>
-              <Toggle name="myoption" label="Dark mode?" checked />
-              <Toggle name="myoption3" label="Is Super?" />
-              <Toggle name="myoption2" accent checked  />
-              <Toggle name="myoption4" secondary checked />              
+              <Toggle name="myoption" label="is primary?" checked />
+              <Toggle name="myoption3" />
+              <Toggle name="myoption2" accent checked label="is accent?" />
+              <Toggle name="myoption4" secondary checked label="is secondary?" />          
             </div>
               `}
           </Highlight>
