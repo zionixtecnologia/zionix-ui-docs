@@ -41,7 +41,7 @@ export const Dropdowns = () => {
         <Tab.Content idItem="code">
           <Highlight className="jsx">
             {`
-            <div>
+            <div className="flex">
                 <Dropdown.Root>
                     <Dropdown.Label>Select an option</Dropdown.Label>
                     <Dropdown.Content>
