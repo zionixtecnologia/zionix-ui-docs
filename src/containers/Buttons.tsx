@@ -11,7 +11,7 @@ export const Buttons = () => {
       </Text>
 
       <Tab.Root>
-        <Tab.Tabs>
+        <Tab.Tabs transparentCards>
           <Tab.Item id="design" active>
             <Icon.Eye /> Design
           </Tab.Item>

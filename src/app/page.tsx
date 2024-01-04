@@ -8,6 +8,7 @@ import { Form } from "@/containers/Form";
 import { Tabs } from "@/containers/Tabs";
 import { Toggles } from "@/containers/Toggles";
 import { Dropdowns } from "@/containers/Dropdowns";
+import { Checkboxes } from "@/containers/Checkboxes";
 
 export default function Home() {
   return (
@@ -56,6 +57,9 @@ export default function Home() {
 
           {/* Buttons */}
           <Buttons />
+
+          {/* Checkbox */}
+          <Checkboxes />
 
           {/* Toggle */}
           <Toggles />

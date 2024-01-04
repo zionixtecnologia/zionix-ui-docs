@@ -13,7 +13,7 @@ export const Tabs = () => {
 
       <Tab.Root>
         <Tab.Tabs>
-          <Tab.Item id="1">
+          <Tab.Item id="1" active>
             <IconHome /> My Home
           </Tab.Item>
           <Tab.Item id="2">
@@ -27,13 +27,13 @@ export const Tabs = () => {
 
         <Tab.Content idItem="1">
           <p>
-            This is <strong>My Home Tab</strong>
+            This is <strong>My Home Tab content</strong>
           </p>
         </Tab.Content>
 
         <Tab.Content idItem="2">
           <p>
-            This is <strong>Settings Tab</strong>
+            This is <strong>Settings Tab content</strong>
           </p>
         </Tab.Content>
 

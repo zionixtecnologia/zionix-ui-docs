@@ -1,4 +1,4 @@
-import { Card, Input, Text, Tab, Hr, Toggle } from "zionix-ui";
+import { Card, Input, Text, Tab, Hr, Toggle, Checkbox } from "zionix-ui";
 import * as Icon from "@/components/Icon";
 import Highlight from "react-highlight";
 
@@ -45,7 +45,9 @@ export const Form = () => {
               label="Password"
               type="password"
             />
-            <Toggle name="admin" label="Is Admin?"/>
+
+            <Toggle name="admin" label="Is Admin?" checked />
+            <Checkbox label="Remember my password" checked/>
           </Card>
         </Tab.Content>
 
@@ -76,6 +78,10 @@ export const Form = () => {
                 label="Password"
                 type="password"
               />
+
+              <Toggle name="admin" label="Is Admin?" checked />
+              
+              <Checkbox label="Remember my password" checked/>
             </Card>
           </>
               `}
