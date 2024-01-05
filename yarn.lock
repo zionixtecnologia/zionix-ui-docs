@@ -1062,10 +1062,10 @@ yaml@^2.3.4:
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.3.4.tgz#53fc1d514be80aabf386dc6001eb29bf3b7523b2"
   integrity sha512-8aAvwVUSHpfEqTQ4w/KMlf3HcRdt50E5ODIQJBw1fQ5RL34xabzxtUlzTXVqc4rkZsPbvrXKWnABCD7kWSmocA==
 
-zionix-ui@^0.0.52:
-  version "0.0.52"
-  resolved "https://registry.yarnpkg.com/zionix-ui/-/zionix-ui-0.0.52.tgz#8608e8aaf6c8b49e8e02b9e50e60f50bcc5732a8"
-  integrity sha512-IFye5+hiAKYnWyHx6tSa85DjreeLWIfOOgvyqhRcpguf2FN+mb8H6PgZEOvC03WDep7wPspQpxxgoyqEHy7LuA==
+zionix-ui@^0.0.54:
+  version "0.0.54"
+  resolved "https://registry.yarnpkg.com/zionix-ui/-/zionix-ui-0.0.54.tgz#3de45f3eb45e742709b59e70cb7983b84b091934"
+  integrity sha512-qpFJvkQyu4+xqCQBT55Hj2ylra7kNpjCVsPKCND3I0KiFY1UoA3lzJ26YyEbzCH4K1JtP8qn1Hwf/q/SMF/5CQ==
   dependencies:
     clsx "^2.1.0"
     react "^18.2.0"
