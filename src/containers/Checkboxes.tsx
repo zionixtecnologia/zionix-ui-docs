@@ -1,7 +1,7 @@
 import { Text, Tab, Hr, Checkbox } from "zionix-ui";
 import * as Icon from "@/components/Icon";
 import Highlight from "react-highlight";
-import { IconSquareCheck, IconHome, IconSettings } from "@tabler/icons-react";
+import { IconSquareCheck } from "@tabler/icons-react";
 
 export const Checkboxes = () => {
   return (

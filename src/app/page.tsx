@@ -1,6 +1,6 @@
 "use client";
 
-import { Hr, Text } from "zionix-ui";
+import { Avatar, Hr, Text } from "zionix-ui";
 import pkg from "../../package.json";
 import { Typography } from "@/containers/Typography";
 import { Buttons } from "@/containers/Buttons";
@@ -9,6 +9,7 @@ import { Tabs } from "@/containers/Tabs";
 import { Toggles } from "@/containers/Toggles";
 import { Dropdowns } from "@/containers/Dropdowns";
 import { Checkboxes } from "@/containers/Checkboxes";
+import { Avatars } from "@/containers/Avatars";
 
 export default function Home() {
   return (
@@ -57,6 +58,9 @@ export default function Home() {
 
           {/* Buttons */}
           <Buttons />
+
+          {/* Avatars */}
+          <Avatars />
 
           {/* Checkbox */}
           <Checkboxes />
