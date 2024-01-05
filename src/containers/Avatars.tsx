@@ -25,7 +25,7 @@ export const Avatars = () => {
         <Tab.Content idItem="design">
           <div className="flex flex-wrap items-center gap-4">
             <Avatar label="PG" mini accent />
-            <Avatar src="https://github.com/pablogeokar.png" />
+            <Avatar src="PATH INVALID" />
             <Avatar label="PG" />
             <Avatar src="https://github.com/pablogeokar.png" shadow />
             <Avatar src="https://github.com/zionixtecnologia.png" ring />
