@@ -10,6 +10,7 @@ import { Toggles } from "@/containers/Toggles";
 import { Dropdowns } from "@/containers/Dropdowns";
 import { Checkboxes } from "@/containers/Checkboxes";
 import { Avatars } from "@/containers/Avatars";
+import { ScrollingContainer } from "@/containers/ScrollingContainer";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       <div className="container lg:max-w-4xl p-2 mx-auto">
         {/* Header */}
         <div className="flex flex-col gap-2 flex-wrap">
-          <div className="flex flex-col">
+          <div className="flex justify-center items-center flex-col">
             {/* Logo */}
             <div className="flex justify-between items-center flex-col gap-4">
               <div className="flex gap-1">
@@ -58,6 +59,9 @@ export default function Home() {
 
           {/* Buttons */}
           <Buttons />
+
+          {/* Scrolling */}
+          <ScrollingContainer />
 
           {/* Avatars */}
           <Avatars />

@@ -22,7 +22,7 @@ export const Typography = () => {
         </Tab.Tabs>
 
         <Tab.Content idItem="design">
-          <div style={{gap: '24px'}} className="flex">
+          <div style={{gap: '36px'}} className="flex">
             <div className="flex flex-col gap-4">
               <Text>Text 1</Text>
               <Text large>Text 1</Text>
