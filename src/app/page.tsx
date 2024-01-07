@@ -11,6 +11,7 @@ import { Dropdowns } from "@/containers/Dropdowns";
 import { Checkboxes } from "@/containers/Checkboxes";
 import { Avatars } from "@/containers/Avatars";
 import { ScrollingContainer } from "@/containers/ScrollingContainer";
+import { BadgeContainer } from "@/containers/BadgeContainer";
 
 export default function Home() {
   return (
@@ -68,6 +69,9 @@ export default function Home() {
 
           {/* Checkbox */}
           <Checkboxes />
+
+          {/* Badge */}
+          <BadgeContainer />
 
           {/* Toggle */}
           <Toggles />
