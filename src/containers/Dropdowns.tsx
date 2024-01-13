@@ -1,4 +1,4 @@
-import { Text, Tab, Hr, Toggle, Dropdown, Card } from "zionix-ui";
+import { Text, Tab, Hr, Avatar, Dropdown } from "zionix-ui";
 import * as Icon from "@/components/Icon";
 import Highlight from "react-highlight";
 import { IconSelect } from "@tabler/icons-react";
@@ -23,7 +23,7 @@ export const Dropdowns = () => {
         </Tab.Tabs>
 
         <Tab.Content idItem="design">
-          <div className="flex">
+          <div className="flex items-center gap-4">
             <Dropdown.Root>
               <Dropdown.Label>Select an option</Dropdown.Label>
               <Dropdown.Content>
@@ -32,6 +32,18 @@ export const Dropdowns = () => {
                 </Dropdown.Item>
                 <Dropdown.Item href="http://www.google.com">
                   Item 2
+                </Dropdown.Item>
+              </Dropdown.Content>
+            </Dropdown.Root>
+
+            <Dropdown.Root>
+              <Dropdown.Label>
+                <Avatar mini src="https://github.com/pablogeokar.png" />
+                Pablo George
+              </Dropdown.Label>
+              <Dropdown.Content>
+                <Dropdown.Item onClick={() => alert("onClick Event")}>
+                  Click me
                 </Dropdown.Item>
               </Dropdown.Content>
             </Dropdown.Root>
