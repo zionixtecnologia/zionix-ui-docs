@@ -47,6 +47,30 @@ export const Dropdowns = () => {
                 </Dropdown.Item>
               </Dropdown.Content>
             </Dropdown.Root>
+
+            <Dropdown.Root transparent>
+              <Dropdown.Label>
+                <Avatar mini src="https://github.com/romatorres.png" />
+                Romario
+              </Dropdown.Label>
+              <Dropdown.Content>
+                <Dropdown.Item onClick={() => alert("onClick Event")}>
+                  Content align default
+                </Dropdown.Item>
+              </Dropdown.Content>
+            </Dropdown.Root>
+
+            <Dropdown.Root transparent bordered>
+              <Dropdown.Label>
+                <Avatar mini src="https://github.com/zionixtecnologia.png" />
+                ZIONIX
+              </Dropdown.Label>
+              <Dropdown.Content left>
+                <Dropdown.Item onClick={() => alert("onClick Event")}>
+                  Content align Left
+                </Dropdown.Item>
+              </Dropdown.Content>
+            </Dropdown.Root>
           </div>
         </Tab.Content>
 
@@ -54,15 +78,53 @@ export const Dropdowns = () => {
           <Highlight className="jsx">
             {`
             <div className="flex">
-                <Dropdown.Root>
-                    <Dropdown.Label>Select an option</Dropdown.Label>
-                    <Dropdown.Content>
-                    <Dropdown.Item onClick={() => alert("onClick Event")}>
-                        Item 1
-                    </Dropdown.Item>
-                    <Dropdown.Item href="http://www.google.com">Item 2</Dropdown.Item>
-                    </Dropdown.Content>
-                </Dropdown.Root>            
+              <Dropdown.Root>
+              <Dropdown.Label>Select an option</Dropdown.Label>
+              <Dropdown.Content>
+                <Dropdown.Item onClick={() => alert("onClick Event")}>
+                  Item 1
+                </Dropdown.Item>
+                <Dropdown.Item href="http://www.google.com">
+                  Item 2
+                </Dropdown.Item>
+              </Dropdown.Content>
+            </Dropdown.Root>
+
+            <Dropdown.Root>
+              <Dropdown.Label>
+                <Avatar mini src="https://github.com/pablogeokar.png" />
+                Pablo George
+              </Dropdown.Label>
+              <Dropdown.Content>
+                <Dropdown.Item onClick={() => alert("onClick Event")}>
+                  Click me
+                </Dropdown.Item>
+              </Dropdown.Content>
+            </Dropdown.Root>
+
+            <Dropdown.Root transparent>
+              <Dropdown.Label>
+                <Avatar mini src="https://github.com/romatorres.png" />
+                Romario
+              </Dropdown.Label>
+              <Dropdown.Content>
+                <Dropdown.Item onClick={() => alert("onClick Event")}>
+                  Content align default
+                </Dropdown.Item>
+              </Dropdown.Content>
+            </Dropdown.Root>
+
+            <Dropdown.Root transparent bordered>
+              <Dropdown.Label>
+                <Avatar mini src="https://github.com/zionixtecnologia.png" />
+                ZIONIX
+              </Dropdown.Label>
+              <Dropdown.Content left>
+                <Dropdown.Item onClick={() => alert("onClick Event")}>
+                  Content align Left
+                </Dropdown.Item>
+              </Dropdown.Content>
+            </Dropdown.Root>                        
             </div>
               `}
           </Highlight>

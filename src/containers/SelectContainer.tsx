@@ -48,6 +48,29 @@ export const SelectContainer = () => {
               },
             ]}
           />
+
+          <Select
+            placeholder="Select a country..."
+            name="country"
+            defaultValue="canada"
+            onChange={(value) => {
+              console.log("Select country", value);
+            }}
+            options={[
+              {
+                label: "Brasil",
+                value: "brasil",
+              },
+              {
+                label: "Argentina",
+                value: "argentina",
+              },
+              {
+                label: "Canadá",
+                value: "canada",
+              },
+            ]}
+          />
         </Tab.Content>
 
         <Tab.Content idItem="code">
