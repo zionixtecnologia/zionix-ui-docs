@@ -23,54 +23,61 @@ export const SelectContainer = () => {
         </Tab.Tabs>
 
         <Tab.Content idItem="design">
-          <Select
-            placeholder="Select a country..."
-            name="country"
-            defaultValue="canada"
-            onChange={(value) => {
-              console.log("Select country", value);
-            }}
-            options={[
-              {
-                label: "Brasil",
-                value: "brasil",
-                img: "https://flagpedia.net/data/flags/w580/br.webp",
-              },
-              {
-                label: "Argentina",
-                value: "argentina",
-                img: "https://flagpedia.net/data/flags/w580/ar.webp",
-              },
-              {
-                label: "Canadá",
-                value: "canada",
-                img: "https://flagpedia.net/data/flags/w580/ca.webp",
-              },
-            ]}
-          />
+          <div className="flex gap-6">
+            <div className="w-60">
+              <Select
+                placeholder="Select a country..."
+                name="country"
+                defaultValue="canada"
+                onChange={(value) => {
+                  console.log("Select country", value);
+                }}
+                options={[
+                  {
+                    label: "Brasil",
+                    value: "brasil",
+                    img: "https://flagpedia.net/data/flags/w580/br.webp",
+                  },
+                  {
+                    label: "Argentina",
+                    value: "argentina",
+                    img: "https://flagpedia.net/data/flags/w580/ar.webp",
+                  },
+                  {
+                    label: "Canada",
+                    value: "canada",
+                    img: "https://flagpedia.net/data/flags/w580/ca.webp",
+                  },
+                ]}
+              />
+            </div>
 
-          <Select
-            placeholder="Select a country..."
-            name="country"
-            defaultValue="canada"
-            onChange={(value) => {
-              console.log("Select country", value);
-            }}
-            options={[
-              {
-                label: "Brasil",
-                value: "brasil",
-              },
-              {
-                label: "Argentina",
-                value: "argentina",
-              },
-              {
-                label: "Canadá",
-                value: "canada",
-              },
-            ]}
-          />
+            <div className="w-60">
+              <Select
+                left
+                placeholder="Select a country..."
+                name="country"
+                defaultValue="canada"
+                onChange={(value) => {
+                  console.log("Select country", value);
+                }}
+                options={[
+                  {
+                    label: "Brasil",
+                    value: "brasil",
+                  },
+                  {
+                    label: "Argentina",
+                    value: "argentina",
+                  },
+                  {
+                    label: "Canada",
+                    value: "canada",
+                  },
+                ]}
+              />
+            </div>
+          </div>
         </Tab.Content>
 
         <Tab.Content idItem="code">
