@@ -53,28 +53,31 @@ export const SelectContainer = () => {
         <Tab.Content idItem="code">
           <Highlight className="jsx">
             {`
-          <div className="flex flex-wrap items-center gap-4">
-            <Avatar label="PG" mini accent />
-            <Avatar src="https://github.com/pablogeokar.png" />
-            <Avatar label="PG" />
-            <Avatar src="https://github.com/pablogeokar.png" shadow />
-            <Avatar src="https://github.com/zionixtecnologia.png" ring />
-            <Avatar label="ZN" secondary shadow />
-            <Avatar src="https://github.com/zionixtecnologia.png" ring accent />
-            <Avatar src="https://github.com/romatorres.png" large />
-            <Avatar src="https://github.com/romatorres.png" large ring />
-            <Avatar
-                src="https://github.com/romatorres.png"
-                large
-                ring
-                secondary
-            />
-            <Avatar
-                src="https://github.com/zionixtecnologia.png"
-                large
-                ring
-                accent
-            />
+         <Select
+         placeholder="Select a country..."
+         name="country"
+         defaultValue="canada"
+         onChange={(value) => {
+           console.log("Select country", value);
+         }}
+         options={[
+           {
+             label: "Brasil",
+             value: "brasil",
+             img: "https://flagpedia.net/data/flags/w580/br.webp",
+           },
+           {
+             label: "Argentina",
+             value: "argentina",
+             img: "https://flagpedia.net/data/flags/w580/ar.webp",
+           },
+           {
+             label: "Canadá",
+             value: "canada",
+             img: "https://flagpedia.net/data/flags/w580/ca.webp",
+           },
+         ]}
+       />
         </div>
             `}
           </Highlight>

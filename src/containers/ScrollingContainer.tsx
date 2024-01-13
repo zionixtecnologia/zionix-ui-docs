@@ -24,16 +24,15 @@ export const ScrollingContainer = () => {
 
         <Tab.Content idItem="design">
           <Scrolling>
-            <div className="bg-slate-50 w-[220px] inline-block mr-4 shadow rounded-2xl hover:scale-105 ease-in-out duration-300">
+            <div className="bg-slate-50 w-[220px]  mr-4 shadow rounded-2xl hover:scale-105 ease-in-out duration-300">
               <img
                 src="https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_1280.jpg"
                 className="rounded-2xl p-2"
                 alt="image"
-                width={220}
               />
             </div>
 
-            <div className="bg-slate-50 w-[220px] inline-block mr-4 shadow rounded-2xl hover:scale-105 ease-in-out duration-300">
+            <div className="bg-slate-50 w-[220px]  mr-4 shadow rounded-2xl hover:scale-105 ease-in-out duration-300">
               <img
                 src="https://cdn.pixabay.com/photo/2020/02/15/16/09/loveourplanet-4851331_1280.jpg"
                 className="rounded-2xl p-2"
@@ -42,7 +41,7 @@ export const ScrollingContainer = () => {
               />
             </div>
 
-            <div className="bg-slate-50 w-[220px] mr-4 inline-block shadow rounded-2xl hover:scale-105 ease-in-out duration-300">
+            <div className="bg-slate-50 w-[220px] mr-4  shadow rounded-2xl hover:scale-105 ease-in-out duration-300">
               <img
                 src="https://cdn.pixabay.com/photo/2016/11/29/09/16/architecture-1868667_1280.jpg"
                 className="rounded-2xl p-2"
@@ -51,7 +50,7 @@ export const ScrollingContainer = () => {
               />
             </div>
 
-            <div className="bg-slate-50 w-[220px] mr-4 inline-block shadow rounded-2xl hover:scale-105 ease-in-out duration-300">
+            <div className="bg-slate-50 w-[220px] mr-4  shadow rounded-2xl hover:scale-105 ease-in-out duration-300">
               <img
                 src="https://cdn.pixabay.com/photo/2015/04/19/08/32/rose-729509_1280.jpg"
                 className="rounded-2xl p-2"
