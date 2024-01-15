@@ -23,7 +23,7 @@ export const Dropdowns = () => {
         </Tab.Tabs>
 
         <Tab.Content idItem="design">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center flex-wrap gap-4">
             <Dropdown.Root>
               <Dropdown.Label>Select an option</Dropdown.Label>
               <Dropdown.Content>
