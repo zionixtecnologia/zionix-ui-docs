@@ -1,6 +1,6 @@
 "use client";
 
-import { Avatar, Hr, Text } from "zionix-ui";
+import { Hr, Text } from "zionix-ui";
 import pkg from "../../package.json";
 import { Typography } from "@/containers/Typography";
 import { Buttons } from "@/containers/Buttons";
@@ -17,6 +17,7 @@ import { SkeletonContainer } from "@/containers/SkeletonContainer";
 
 export default function Home() {
   return (
+    // <ZionixGlobal>
     <div className="flex flex-col justify-center items-center flex-wrap mt-8">
       <div className="container lg:max-w-4xl p-2 mx-auto">
         {/* Header */}
@@ -44,7 +45,8 @@ export default function Home() {
                 </a>
                 <img alt="npm" src="https://img.shields.io/npm/dy/zionix-ui" />
                 <span className="flex text-xs text-gray-600 dark:text-slate-300 p-1 border dark:border-slate-500 border-slate-600 rounded-lg">
-                  beta version {pkg.dependencies["zionix-ui"].substring(1, 10)}
+                  beta version{" "}
+                  {pkg.dependencies["zionix-ui"].substring(1, 10)}
                 </span>
               </div>
             </div>
@@ -95,5 +97,6 @@ export default function Home() {
         </div>
       </div>
     </div>
+    //</ZionixGlobal>
   );
 }

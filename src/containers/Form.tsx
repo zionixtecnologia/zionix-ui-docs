@@ -22,7 +22,7 @@ export const Form = () => {
         </Tab.Tabs>
 
         <Tab.Content idItem="design">
-          <div className="max-w-[550px]">
+          <div style={{width:320}}>
             <Card>
               <Input
                 placeholder="Informe o seu username"

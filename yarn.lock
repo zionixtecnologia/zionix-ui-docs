@@ -936,9 +936,9 @@ tailwind-merge@^1.14.0:
   integrity sha512-3mFKyCo/MBcgyOTlrY8T7odzZFx+w+qKSMAmdFzRvqBfLlSigU6TZnlFHK0lkMwj9Bj8OYU+9yW9lmGuS0QEnQ==
 
 tailwind-variants@^0.1.18:
-  version "0.1.19"
-  resolved "https://registry.yarnpkg.com/tailwind-variants/-/tailwind-variants-0.1.19.tgz#5551a84b3ad758b5ccdfa6c048d6e461b551d57d"
-  integrity sha512-D9Yf5WqsxodnCtjZt6KifEoKwW8rTURXQV03KRKlojITQM5gV1vPVWufWNiIvd/ptC3QybYFpwmHK9cs4Ei08Q==
+  version "0.1.20"
+  resolved "https://registry.yarnpkg.com/tailwind-variants/-/tailwind-variants-0.1.20.tgz#8aaed9094be0379a438641a42d588943e44c5fcd"
+  integrity sha512-AMh7x313t/V+eTySKB0Dal08RHY7ggYK0MSn/ad8wKWOrDUIzyiWNayRUm2PIJ4VRkvRnfNuyRuKbLV3EN+ewQ==
   dependencies:
     tailwind-merge "^1.14.0"
 
@@ -1062,10 +1062,10 @@ yaml@^2.3.4:
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.3.4.tgz#53fc1d514be80aabf386dc6001eb29bf3b7523b2"
   integrity sha512-8aAvwVUSHpfEqTQ4w/KMlf3HcRdt50E5ODIQJBw1fQ5RL34xabzxtUlzTXVqc4rkZsPbvrXKWnABCD7kWSmocA==
 
-zionix-ui@^0.0.66:
-  version "0.0.66"
-  resolved "https://registry.yarnpkg.com/zionix-ui/-/zionix-ui-0.0.66.tgz#97692e809f54956a509ec5ced72637d27d2e87f0"
-  integrity sha512-MQb78+7KDjy4LbMljC6jY7guT3egwX5ED8ixPMV3p632GTkVeNwD36UWSfor+unE9JdzHkmCwYnzOxb0JOiKSQ==
+zionix-ui@^0.0.67:
+  version "0.0.67"
+  resolved "https://registry.yarnpkg.com/zionix-ui/-/zionix-ui-0.0.67.tgz#5d6f9fc58df20f8c43a97fd5ad303c8213e1fd53"
+  integrity sha512-K13V1djhaY3RBs/ZyZKm/fYREcagb6gl8VruzihWlGIxRh8ksST+fQp92sbXq8I2zl57qQ7rzG3XR4vBvVA1AA==
   dependencies:
     clsx "^2.1.0"
     react "^18.2.0"
