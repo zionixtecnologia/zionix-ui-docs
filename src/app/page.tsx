@@ -13,6 +13,7 @@ import { Avatars } from "@/containers/Avatars";
 import { ScrollingContainer } from "@/containers/ScrollingContainer";
 import { BadgeContainer } from "@/containers/BadgeContainer";
 import { SelectContainer } from "@/containers/SelectContainer";
+import { SkeletonContainer } from "@/containers/SkeletonContainer";
 
 export default function Home() {
   return (
@@ -64,6 +65,9 @@ export default function Home() {
 
           {/* Scrolling */}
           <ScrollingContainer />
+
+          {/* Skeleton */}
+          <SkeletonContainer />
 
           {/* Avatars */}
           <Avatars />

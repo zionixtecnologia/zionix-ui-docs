@@ -22,33 +22,35 @@ export const Form = () => {
         </Tab.Tabs>
 
         <Tab.Content idItem="design">
-          <Card className="w-[420px] max-w-full">
-            <Input
-              placeholder="Informe o seu username"
-              label="Username"
-              mandatory
-              icon={<Icon.User />}
-            />
-            <Input
-              placeholder="Informe o seu e-mail"
-              label="E-mail"
-              type="email"
-            />
-            <Input
-              placeholder="0,00"
-              label="Currency Value"
-              type="currency"
-              icon={<Icon.Real />}
-            />
-            <Input
-              placeholder="Informe o seu e-mail"
-              label="Password"
-              type="password"
-            />
+          <div className="max-w-[550px]">
+            <Card>
+              <Input
+                placeholder="Informe o seu username"
+                label="Username"
+                mandatory
+                icon={<Icon.User />}
+              />
+              <Input
+                placeholder="Informe o seu e-mail"
+                label="E-mail"
+                type="email"
+              />
+              <Input
+                placeholder="0,00"
+                label="Currency Value"
+                type="currency"
+                icon={<Icon.Real />}
+              />
+              <Input
+                placeholder="Informe o seu e-mail"
+                label="Password"
+                type="password"
+              />
 
-            <Toggle name="admin" label="Is Admin?" checked />
-            <Checkbox label="Remember my password" checked/>
-          </Card>
+              <Toggle name="admin" label="Is Admin?" checked />
+              <Checkbox label="Remember my password" checked />
+            </Card>
+          </div>
         </Tab.Content>
 
         <Tab.Content idItem="code">
