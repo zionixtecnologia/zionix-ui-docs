@@ -14,6 +14,7 @@ import { ScrollingContainer } from "@/containers/ScrollingContainer";
 import { BadgeContainer } from "@/containers/BadgeContainer";
 import { SelectContainer } from "@/containers/SelectContainer";
 import { SkeletonContainer } from "@/containers/SkeletonContainer";
+import { ModalContainer } from "@/containers/ModalContainer";
 
 export default function Home() {
   return (
@@ -45,8 +46,7 @@ export default function Home() {
                 </a>
                 <img alt="npm" src="https://img.shields.io/npm/dy/zionix-ui" />
                 <span className="flex text-xs text-gray-600 dark:text-slate-300 p-1 border dark:border-slate-500 border-slate-600 rounded-lg">
-                  beta version{" "}
-                  {pkg.dependencies["zionix-ui"].substring(1, 10)}
+                  beta version {pkg.dependencies["zionix-ui"].substring(1, 10)}
                 </span>
               </div>
             </div>
@@ -67,6 +67,9 @@ export default function Home() {
 
           {/* Scrolling */}
           <ScrollingContainer />
+
+          {/* Modal */}
+          <ModalContainer />
 
           {/* Skeleton */}
           <SkeletonContainer />
