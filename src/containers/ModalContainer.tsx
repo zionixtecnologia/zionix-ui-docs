@@ -5,7 +5,10 @@ import { IconAppWindow, IconAlertCircle } from "@tabler/icons-react";
 import { useState } from "react";
 
 export const ModalContainer = () => {
-  const [open, setOpen] = useState(false);
+  const [danger, setDanger] = useState(false);
+  const [info, setInfo] = useState(false);
+  const [warning, setWarning] = useState(false);
+  const [success, setSuccess] = useState(false);
   return (
     <div className="flex flex-col gap-4 mt-9">
       <Text extraLarge>
@@ -25,10 +28,24 @@ export const ModalContainer = () => {
         </Tab.Tabs>
 
         <Tab.Content idItem="design">
-          <div>
-            <Button primary onClick={() => setOpen(true)}>Open Modal</Button>
+          <div className="flex flex-wrap gap-4">
+            <Button secondary onClick={() => setDanger(true)}>
+              Modal Danger
+            </Button>
+
+            <Button secondary onClick={() => setInfo(true)}>
+              Modal Info
+            </Button>
+
+            <Button secondary onClick={() => setWarning(true)}>
+              Modal Warning
+            </Button>
+
+            <Button secondary onClick={() => setSuccess(true)}>
+              Modal Success
+            </Button>
           </div>
-          <Modal.Root open={open} setOpen={setOpen}>
+          <Modal.Root open={danger} setOpen={setDanger}>
             <Modal.Header>
               <Modal.Icon danger>
                 <IconAlertCircle />
@@ -41,11 +58,80 @@ export const ModalContainer = () => {
               will be permanently removed. This action cannot be undone.
             </Modal.Text>
 
-            <Modal.Buttons cancelText="Abort">
-              <button className="bg-red-700 rounded px-4 py-2 text-white cursor-pointer hover:bg-red-600">
+            <Modal.Footer cancelText="Abort">
+              <Modal.Button
+                onClick={() => alert("onClick Button Modal")}
+                danger
+              >
                 Deactive
-              </button>
-            </Modal.Buttons>
+              </Modal.Button>
+            </Modal.Footer>
+          </Modal.Root>
+
+          <Modal.Root open={info} setOpen={setInfo}>
+            <Modal.Header>
+              <Modal.Icon info>
+                <IconAlertCircle />
+              </Modal.Icon>
+              <Modal.Title label="Deactivate account" />
+            </Modal.Header>
+
+            <Modal.Text>
+              Are you sure you want to deactivate your account? All of your data
+              will be permanently removed. This action cannot be undone.
+            </Modal.Text>
+
+            <Modal.Footer cancelText="Abort">
+              <Modal.Button onClick={() => alert("onClick Button Modal")} info>
+                Deactive
+              </Modal.Button>
+            </Modal.Footer>
+          </Modal.Root>
+
+          <Modal.Root open={warning} setOpen={setWarning}>
+            <Modal.Header>
+              <Modal.Icon warning>
+                <IconAlertCircle />
+              </Modal.Icon>
+              <Modal.Title label="Deactivate account" />
+            </Modal.Header>
+
+            <Modal.Text>
+              Are you sure you want to deactivate your account? All of your data
+              will be permanently removed. This action cannot be undone.
+            </Modal.Text>
+
+            <Modal.Footer cancelText="Abort">
+              <Modal.Button
+                onClick={() => alert("onClick Button Modal")}
+                warning
+              >
+                Deactive
+              </Modal.Button>
+            </Modal.Footer>
+          </Modal.Root>
+
+          <Modal.Root open={success} setOpen={setSuccess}>
+            <Modal.Header>
+              <Modal.Icon success>
+                <IconAlertCircle />
+              </Modal.Icon>
+              <Modal.Title label="Deactivate account" />
+            </Modal.Header>
+
+            <Modal.Text>
+              Are you sure you want to deactivate your account? All of your data
+              will be permanently removed. This action cannot be undone.
+            </Modal.Text>
+
+            <Modal.Footer cancelText="Abort">
+              <Modal.Button
+                onClick={() => alert("onClick Button Modal")}
+                success
+              >
+                Deactive
+              </Modal.Button>
+            </Modal.Footer>
           </Modal.Root>
         </Tab.Content>
 
@@ -67,11 +153,14 @@ const [open, setOpen] = useState(false);
     will be permanently removed. This action cannot be undone.
   </Modal.Text>
 
-  <Modal.Buttons cancelText="Abort">
-    <button className="bg-red-700 rounded px-4 py-2 text-white cursor-pointer hover:bg-red-600">
+  <Modal.Footer cancelText="Abort">
+    <Modal.Button
+      onClick={() => alert("onClick Button Modal")}
+      danger
+    >
       Deactive
-    </button>
-  </Modal.Buttons>
+    </Modal.Button>
+  </Modal.Footer>
 </Modal.Root>
             `}
           </Highlight>
