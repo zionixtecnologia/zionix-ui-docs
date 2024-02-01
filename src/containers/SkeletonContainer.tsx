@@ -23,7 +23,7 @@ export const SkeletonContainer = () => {
         </Tab.Tabs>
 
         <Tab.Content idItem="design">
-          <div className="flex gap-4 max-w-[550px]">
+          <div className="flex gap-4 max-w-[550px] flex-wrap">
             <div className="flex flex-col gap-1 justify-center items-center">
               <Skeleton.Avatar size={80} />
               <Skeleton.Row radius width={120} />
@@ -31,7 +31,7 @@ export const SkeletonContainer = () => {
             <div className="flex flex-col justify-center gap-4">
               <Skeleton.Row radius width={150} />
               <Skeleton.Row radiusMedium width={200} />
-              <Skeleton.Row radiusLarge width={320} />
+              <Skeleton.Row radiusLarge width={280} />
             </div>
           </div>
         </Tab.Content>
