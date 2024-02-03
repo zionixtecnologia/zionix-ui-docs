@@ -20,7 +20,7 @@ import { ToastNotificationContainer } from "@/containers/ToastNotificationContai
 export default function Home() {
   return (
     <ToastNotification>
-      <div className="flex flex-col justify-center items-center flex-wrap mt-8 overflow-y-auto">
+      <div className="flex flex-col justify-center items-center flex-wrap mt-8">
         <div className="container lg:max-w-4xl p-2 mx-auto">
           {/* Header */}
           <div className="flex flex-col gap-2 flex-wrap">
