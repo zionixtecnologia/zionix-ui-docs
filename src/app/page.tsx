@@ -16,6 +16,7 @@ import { SelectContainer } from "@/containers/SelectContainer";
 import { SkeletonContainer } from "@/containers/SkeletonContainer";
 import { ModalContainer } from "@/containers/ModalContainer";
 import { ToastNotificationContainer } from "@/containers/ToastNotificationContainer";
+import { TableContainer } from "@/containers/TableContainer";
 
 export default function Home() {
   return (
@@ -81,6 +82,9 @@ export default function Home() {
 
             {/* Modal */}
             <ModalContainer />
+
+            {/* Table */}
+            <TableContainer />
 
             {/* Skeleton */}
             <SkeletonContainer />

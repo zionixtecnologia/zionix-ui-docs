@@ -1,4 +1,4 @@
-import { Text, Tab, Hr, Badge, useToastNotification, Button } from "zionix-ui";
+import { Text, Tab, Hr, useToastNotification, Button } from "zionix-ui";
 import * as Icon from "@/components/Icon";
 import Highlight from "react-highlight";
 import { IconBread } from "@tabler/icons-react";
@@ -9,7 +9,7 @@ export const ToastNotificationContainer = () => {
     <div className="flex flex-col gap-4 mt-9">
       <Text extraLarge>
         <IconBread />
-        ToastNotification <Badge green bordered>New v0.0.72</Badge>
+        ToastNotification
       </Text>
 
       <Tab.Root>
