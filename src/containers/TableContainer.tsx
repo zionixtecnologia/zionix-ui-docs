@@ -63,11 +63,11 @@ export const TableContainer = () => {
             <Table.Body
               data={data}
               fields={[
-                { name: "id", align: "left" },
+                { name: "id", color: "var(--primary-color)", bold: true },
                 { name: "details" },
-                { name: "status" },
+                { name: "status", badge: { color: "blue", bordered: true } },
                 { name: "date" },
-                { name: "total", align: 'right' },
+                { name: "total", align: "right", color: "#475569" },
               ]}
             />
           </Table.Root>
@@ -123,11 +123,11 @@ export const TableContainer = () => {
   <Table.Body
     data={data}
     fields={[
-      { name: "id", align: "left" },
+      { name: "id", color: "var(--primary-color)", bold: true },
       { name: "details" },
-      { name: "status" },
+      { name: "status", badge: { color: "blue", bordered: true } },
       { name: "date" },
-      { name: "total", align: "right" },
+      { name: "total", align: "right", color: "#475569" },
     ]}
   />
 </Table.Root>;
