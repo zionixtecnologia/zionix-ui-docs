@@ -10,28 +10,32 @@ export const TableContainer = () => {
       details: "Detail field",
       status: "Delivered",
       date: "01/01/2024",
-      total: "$ 4.96",
+      total: "R$ 4,96",
+      img: "https://avatars.githubusercontent.com/u/18231436?v=4",
     },
     {
       id: "0002",
       details: "Detail field",
       status: "Delivered",
       date: "01/01/2024",
-      total: "$ 11.00",
+      total: "R$ 4,96",
+      img: "https://avatars.githubusercontent.com/u/6181797?v=4",
     },
     {
       id: "0003",
       details: "Detail field",
       status: "Delivered",
-      date: "01/02/2024",
-      total: "$ 5.99",
+      date: "01/01/2024",
+      total: "R$ 74,96",
+      img: "https://avatars.githubusercontent.com/u/140957791?v=4",
     },
     {
       id: "0004",
       details: "Detail field",
       status: "Delivered",
-      date: "01/02/2024",
-      total: "$ 75.89",
+      date: "01/01/2024",
+      total: "R$ 127,54",
+      img: "https://avatars.githubusercontent.com/u/69631?v=4",
     },
   ];
   return (
@@ -58,14 +62,15 @@ export const TableContainer = () => {
         <Tab.Content idItem="design">
           <Table.Root>
             <Table.Head
-              labels={["No.", "Details", "Status", "Date", "Total"]}
+              labels={["No.", "User", "Details", "Status", "Date", "Total"]}
             />
             <Table.Body
               data={data}
               fields={[
                 { name: "id", color: "var(--primary-color)", bold: true },
+                { name: "img", avatar: true },
                 { name: "details" },
-                { name: "status", badge: { color: "blue", bordered: true } },
+                { name: "status", badge: { color: 'blue', bordered: true } },
                 { name: "date" },
                 { name: "total", align: "right", color: "#475569" },
               ]}
@@ -77,34 +82,38 @@ export const TableContainer = () => {
           <Highlight className="jsx">
             {`
  const data = [
-    {
-      id: "0001",
-      details: "Detail field",
-      status: "Delivered",
-      date: "01/01/2024",
-      total: "$ 4.96",
-    },
-    {
-      id: "0002",
-      details: "Detail field",
-      status: "Delivered",
-      date: "01/01/2024",
-      total: "$ 11.00",
-    },
-    {
-      id: "0003",
-      details: "Detail field",
-      status: "Delivered",
-      date: "01/02/2024",
-      total: "$ 5.99",
-    },
-    {
-      id: "0004",
-      details: "Detail field",
-      status: "Delivered",
-      date: "01/02/2024",
-      total: "$ 75.89",
-    },
+  {
+    id: "0001",
+    details: "Detail field",
+    status: "Delivered",
+    date: "01/01/2024",
+    total: "R$ 4,96",
+    img: "https://avatars.githubusercontent.com/u/18231436?v=4",
+  },
+  {
+    id: "0002",
+    details: "Detail field",
+    status: "Delivered",
+    date: "01/01/2024",
+    total: "R$ 4,96",
+    img: "https://avatars.githubusercontent.com/u/6181797?v=4",
+  },
+  {
+    id: "0003",
+    details: "Detail field",
+    status: "Delivered",
+    date: "01/01/2024",
+    total: "R$ 74,96",
+    img: "https://avatars.githubusercontent.com/u/140957791?v=4",
+  },
+  {
+    id: "0004",
+    details: "Detail field",
+    status: "Delivered",
+    date: "01/01/2024",
+    total: "R$ 127,54",
+    img: "https://avatars.githubusercontent.com/u/69631?v=4",
+  },
   ];
 
 
@@ -119,11 +128,12 @@ export const TableContainer = () => {
 
 /* Mode 2 */
 <Table.Root>
-  <Table.Head labels={["No.", "Details", "Status", "Date", "Total"]} />
+  <Table.Head labels={["No.","User", "Details", "Status", "Date", "Total"]} />
   <Table.Body
     data={data}
     fields={[
       { name: "id", color: "var(--primary-color)", bold: true },
+      { name: "img", avatar: true },
       { name: "details" },
       { name: "status", badge: { color: "blue", bordered: true } },
       { name: "date" },
