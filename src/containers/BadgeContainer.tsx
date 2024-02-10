@@ -24,67 +24,67 @@ export const BadgeContainer = () => {
 
         <Tab.Content idItem="design">
           <div className="flex gap-6 flex-wrap">
-            <Badge blue>Blue</Badge>
-            <Badge blue large>
+            <Badge color="blue">Blue</Badge>
+            <Badge color="blue" large>
               Blue
             </Badge>
-            <Badge blue bordered>
+            <Badge color="blue" bordered>
               Blue
             </Badge>
 
-            <Badge dark>Dark</Badge>
-            <Badge dark large>
+            <Badge color="dark">Dark</Badge>
+            <Badge color="dark" large>
               Dark
             </Badge>
-            <Badge dark bordered>
+            <Badge color="dark" bordered>
               Dark
             </Badge>
 
-            <Badge red>Red</Badge>
-            <Badge red large>
+            <Badge color="red">Red</Badge>
+            <Badge color="red" large>
               Red
             </Badge>
-            <Badge red bordered>
+            <Badge color="red" bordered>
               Badge
             </Badge>
 
-            <Badge green>Green</Badge>
-            <Badge green large>
+            <Badge color="green">Green</Badge>
+            <Badge color="green" large>
               Green
             </Badge>
-            <Badge green bordered>
+            <Badge color="green" bordered>
               Green
             </Badge>
 
-            <Badge yellow>Yellow</Badge>
-            <Badge yellow large>
+            <Badge color="yellow">Yellow</Badge>
+            <Badge color="yellow" large>
               Yellow
             </Badge>
-            <Badge yellow bordered>
+            <Badge color="yellow" bordered>
               Yellow
             </Badge>
 
-            <Badge indigo>Indigo</Badge>
-            <Badge indigo large>
+            <Badge color="indigo">Indigo</Badge>
+            <Badge color="indigo" large>
               Indigo
             </Badge>
-            <Badge indigo bordered>
+            <Badge color="indigo" bordered>
               Indigo
             </Badge>
 
-            <Badge purple>Purple</Badge>
-            <Badge purple large>
+            <Badge color="purple">Purple</Badge>
+            <Badge color="purple" large>
               Purple
             </Badge>
-            <Badge purple bordered>
+            <Badge color="purple" bordered>
               Purple
             </Badge>
 
-            <Badge pink>Badge</Badge>
-            <Badge pink large>
+            <Badge color="pink">Badge</Badge>
+            <Badge color="pink" large>
               Badge
             </Badge>
-            <Badge pink bordered>
+            <Badge color="pink" bordered>
               Badge
             </Badge>
           </div>
@@ -94,37 +94,37 @@ export const BadgeContainer = () => {
           <Highlight className="jsx">
             {`
             <div className="flex gap-6 flex-wrap">
-                <Badge blue>Blue</Badge>          
-                <Badge blue large>Blue</Badge>
-                <Badge blue bordered>Blue</Badge>
-    
-                <Badge dark>Dark</Badge>
-                <Badge dark large>Dark</Badge>
-                <Badge dark bordered>Dark</Badge>
-    
-                <Badge red>Red</Badge>
-                <Badge red large>Red</Badge>
-                <Badge red bordered>Badge</Badge>
-    
-                <Badge green>Green</Badge>
-                <Badge green large>Green</Badge>
-                <Badge green bordered>Green</Badge>
-    
-                <Badge yellow>Yellow</Badge>
-                <Badge yellow large>Yellow</Badge>
-                <Badge yellow bordered>Yellow</Badge>
-    
-                <Badge indigo>Indigo</Badge>
-                <Badge indigo large>Indigo</Badge>
-                <Badge indigo bordered>Indigo</Badge>
-    
-                <Badge purple>Purple</Badge>
-                <Badge purple large>Purple</Badge>
-                <Badge purple bordered>Purple</Badge>
-    
-                <Badge pink>Badge</Badge>
-                <Badge pink large>Badge</Badge>
-                <Badge pink bordered>Badge</Badge>
+            <Badge color="blue">Blue</Badge>
+            <Badge color="blue" large>Blue</Badge>
+            <Badge color="blue" bordered>Blue</Badge>
+            
+            <Badge color="dark">Dark</Badge>
+            <Badge color="dark" large>Dark</Badge>
+            <Badge color="dark" bordered>Dark</Badge>
+            
+            <Badge color="red">Red</Badge>
+            <Badge color="red" large>Red</Badge>
+            <Badge color="red" bordered>Badge</Badge>
+            
+            <Badge color="green">Green</Badge>
+            <Badge color="green" large>Green</Badge>
+            <Badge color="green" bordered>Green</Badge>
+            
+            <Badge color="yellow">Yellow</Badge>
+            <Badge color="yellow" large>Yellow</Badge>
+            <Badge color="yellow" bordered>Yellow</Badge>
+            
+            <Badge color="indigo">Indigo</Badge>
+            <Badge color="indigo" large>Indigo</Badge>
+            <Badge color="indigo" bordered>Indigo</Badge>
+            
+            <Badge color="purple">Purple</Badge>
+            <Badge color="purple" large>Purple</Badge>
+            <Badge color="purple" bordered>Purple</Badge>
+            
+            <Badge color="pink">Badge</Badge>
+            <Badge color="pink" large>Badge</Badge>
+            <Badge color="pink" bordered>Badge</Badge>
             </div>
               `}
           </Highlight>

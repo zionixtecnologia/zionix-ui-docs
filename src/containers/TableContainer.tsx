@@ -10,15 +10,15 @@ export const TableContainer = () => {
       details: "Detail field",
       status: "Delivered",
       date: "01/01/2024",
-      total: "R$ 4,96",
+      total: 1.99,
       img: "https://avatars.githubusercontent.com/u/18231436?v=4",
     },
     {
       id: "0002",
       details: "Detail field",
-      status: "Delivered",
+      status: "Travelling",
       date: "01/01/2024",
-      total: "R$ 4,96",
+      total: 4.96,
       img: "https://avatars.githubusercontent.com/u/6181797?v=4",
     },
     {
@@ -26,15 +26,15 @@ export const TableContainer = () => {
       details: "Detail field",
       status: "Delivered",
       date: "01/01/2024",
-      total: "R$ 74,96",
+      total: 74.96,
       img: "https://avatars.githubusercontent.com/u/140957791?v=4",
     },
     {
       id: "0004",
       details: "Detail field",
-      status: "Delivered",
+      status: "Not Status",
       date: "01/01/2024",
-      total: "R$ 127,54",
+      total: 127.54,
       img: "https://avatars.githubusercontent.com/u/69631?v=4",
     },
   ];
@@ -43,7 +43,7 @@ export const TableContainer = () => {
       <Text extraLarge>
         <IconTable />
         Table{" "}
-        <Badge green bordered>
+        <Badge color="green" bordered>
           New v0.0.77
         </Badge>
       </Text>
@@ -70,7 +70,27 @@ export const TableContainer = () => {
                 { name: "id", color: "var(--primary-color)", bold: true },
                 { name: "img", avatar: true },
                 { name: "details" },
-                { name: "status", badge: { color: 'blue', bordered: true } },
+                {
+                  name: "status",
+                  badge: {
+                    color: "dark",
+                    bordered: true,
+                    conditions: [
+                      {
+                        color: "green",
+                        field: "status",
+                        operator: "equal",
+                        value: "Delivered",
+                      },
+                      {
+                        color: "yellow",
+                        field: "status",
+                        operator: "equal",
+                        value: "Travelling",
+                      },
+                    ],
+                  },
+                },
                 { name: "date" },
                 { name: "total", align: "right", color: "#475569" },
               ]}
@@ -81,41 +101,40 @@ export const TableContainer = () => {
         <Tab.Content idItem="code">
           <Highlight className="jsx">
             {`
- const data = [
-  {
-    id: "0001",
-    details: "Detail field",
-    status: "Delivered",
-    date: "01/01/2024",
-    total: "R$ 4,96",
-    img: "https://avatars.githubusercontent.com/u/18231436?v=4",
-  },
-  {
-    id: "0002",
-    details: "Detail field",
-    status: "Delivered",
-    date: "01/01/2024",
-    total: "R$ 4,96",
-    img: "https://avatars.githubusercontent.com/u/6181797?v=4",
-  },
-  {
-    id: "0003",
-    details: "Detail field",
-    status: "Delivered",
-    date: "01/01/2024",
-    total: "R$ 74,96",
-    img: "https://avatars.githubusercontent.com/u/140957791?v=4",
-  },
-  {
-    id: "0004",
-    details: "Detail field",
-    status: "Delivered",
-    date: "01/01/2024",
-    total: "R$ 127,54",
-    img: "https://avatars.githubusercontent.com/u/69631?v=4",
-  },
+   const data = [
+    {
+      id: "0001",
+      details: "Detail field",
+      status: "Delivered",
+      date: "01/01/2024",
+      total: 1.99,
+      img: "https://avatars.githubusercontent.com/u/18231436?v=4",
+    },
+    {
+      id: "0002",
+      details: "Detail field",
+      status: "Travelling",
+      date: "01/01/2024",
+      total: 4.96,
+      img: "https://avatars.githubusercontent.com/u/6181797?v=4",
+    },
+    {
+      id: "0003",
+      details: "Detail field",
+      status: "Delivered",
+      date: "01/01/2024",
+      total: 74.96,
+      img: "https://avatars.githubusercontent.com/u/140957791?v=4",
+    },
+    {
+      id: "0004",
+      details: "Detail field",
+      status: "Not Status",
+      date: "01/01/2024",
+      total: 127.54,
+      img: "https://avatars.githubusercontent.com/u/69631?v=4",
+    },
   ];
-
 
 /* Mode 1 */
 <Table.Root>
@@ -135,7 +154,27 @@ export const TableContainer = () => {
       { name: "id", color: "var(--primary-color)", bold: true },
       { name: "img", avatar: true },
       { name: "details" },
-      { name: "status", badge: { color: "blue", bordered: true } },
+      {
+        name: "status",
+        badge: {
+          color: "dark",
+          bordered: true,
+          conditions: [
+            {
+              color: "green",
+              field: "status",
+              operator: "equal",
+              value: "Delivered",
+            },
+            {
+              color: "yellow",
+              field: "status",
+              operator: "equal",
+              value: "Travelling",
+            },
+          ],
+        },
+      },
       { name: "date" },
       { name: "total", align: "right", color: "#475569" },
     ]}

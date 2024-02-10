@@ -53,7 +53,7 @@ export default function Home() {
                     alt="npm"
                     src="https://img.shields.io/npm/dy/zionix-ui"
                   />
-                  <Badge dark bordered>
+                  <Badge color="dark" bordered>
                     beta version{" "}
                     {pkg.dependencies["zionix-ui"].substring(1, 10)}
                   </Badge>
